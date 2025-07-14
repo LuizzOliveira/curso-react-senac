@@ -17,8 +17,7 @@ export default function Card({ titulo, nome, email, funcao }: CardProps) {
   const handleClick = funcao ?? (() => alert("Função não definida"));
 
   return (
-    <div className="bg-white  h-screan shadow-md rounded-lg p-2 m-1
-      "
+    <div className="bg-white  h-screan shadow-md rounded-lg p-2 m-1"
     >
       <h1 className="font-bold text-[16px]">{titulo}</h1>
       <p>
