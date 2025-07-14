@@ -1,0 +1,30 @@
+"use client";
+import React, { useState } from "react";
+import Aside from "@/componente/Aside";
+import Atividade1 from "@/atividades/Atividade-1";
+// import Atividade2 from "@/atividades/Atividade-2";
+// import Atividade3 from "@/atividades/Atividade-3";
+// import Atividade4 from "@/atividades/Atividade-4";
+// import Atividade5 from "@/atividades/Atividade-5";
+// import Atividade6 from "@/atividades/Atividade-6";
+import Cards from "@/atividades/Cards";
+
+export default function PaginaComAtividades() {
+  const [paginaAtual, setPaginaAtual] = useState("atividade1");
+
+  return (
+    <div className="flex h-screen w-full">
+      <Aside paginaAtual={paginaAtual} setPaginaAtual={setPaginaAtual} />
+
+      <main className="flex flex-1 overflow-auto p-4 items-center justify-center bg-neutral-800">
+        {paginaAtual === "Cards" && <Cards />}
+        {paginaAtual === "atividade1" && <Atividade1 />}
+        {/* {paginaAtual === "atividade2" && <Atividade2 />}
+        {paginaAtual === "atividade3" && <Atividade3 />}
+        {paginaAtual === "atividade4" && <Atividade4 />}
+        {paginaAtual === "atividade5" && <Atividade5 />}
+        {paginaAtual === "atividade6" && <Atividade6 />} */}
+      </main>
+    </div>
+  );
+}
