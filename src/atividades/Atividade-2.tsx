@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 
 export default function Atividade2() {
@@ -11,7 +12,7 @@ export default function Atividade2() {
 
       {!textoEscondido && (
         <button
-          className="bg-red-500 text-white px-8 py-2 rounded transition transform hover:scale-110 hover:shadow-lg cursor-pointer"
+          className="bg-red-500 text-white px-8 py-3 rounded transition transform hover:scale-110 hover:shadow-lg cursor-pointer"
           onClick={() => setTextoEscondido(true)}
         >
           Esconder texto
