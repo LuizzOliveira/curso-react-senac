@@ -31,16 +31,16 @@ export default function ChamadaAPI() {
       {dados.map((item) => (
         <div
           key={item.id}
-          className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between w-full sm:w-[48%] md:w-[31%] lg:w-[23%]"
+          className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between w-full h-120 sm:w-[48%] md:w-[31%] lg:w-[23%]"
         >
           <img
             src={item.image}
             alt={item.title}
-            className="h-48 w-full object-contain mb-4"
+            className="h-45 w-full object-contain rounded-lg"
           />
-          <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
-          <p className="text-green-600 mb-2">R$ {item.price}</p>
-          <p className="text-sm text-gray-600">{item.description}</p>
+          <h2 className="text-[16px] font-semibold">{item.title}</h2>
+          <p className="text-green-600">R$ {item.price}</p>
+          <p className="text-sm text-gray-600 max-h-20 overflow-hidden">{item.description}</p>
 
           <button
             className="mt-2 flex items-center justify-center gap-2 text-[12px]

@@ -15,7 +15,7 @@ type MainProps = {
 
 export default function Main({ paginaAtual }: MainProps) {
   return (
-    <main className="flex flex-1 overflow-auto p-4 items-start justify-center bg-neutral-800">
+    <main className="flex flex-1 overflow-auto items-start justify-center bg-neutral-800">
 
       {paginaAtual === "Cards" && <Cards />}
       {paginaAtual === "atividade1" && <Atividade1 />}
