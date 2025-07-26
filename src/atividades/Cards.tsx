@@ -16,6 +16,7 @@ function Detalhes() {
 export default function CardsOnly() {
   return (
     <main className="flex flex-1 flex-col p-4 h-screen overflow-auto ">
+
       {usuarios.map((user, index) => (
         <Card
           key={index}
