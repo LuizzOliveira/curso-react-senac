@@ -34,7 +34,25 @@ export default function ChamadaAPI() {
     fetchProdutos();
   }, []);
 
+<<<<<<< HEAD
   const skeletonCount = 8;
+=======
+  return (
+    <div className="flex flex-wrap gap-4 p-8 justify-center">
+      {dados.map((item) => (
+        <div
+          key={item.id}
+          className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between w-full h-120 sm:w-[48%] md:w-[31%] lg:w-[23%]"
+        >
+          <img
+            src={item.image}
+            alt={item.title}
+            className="h-45 w-full object-contain rounded-lg"
+          />
+          <h2 className="text-[16px] font-semibold">{item.title}</h2>
+          <p className="text-green-600">R$ {item.price}</p>
+          <p className="text-sm text-gray-600 max-h-20 overflow-hidden">{item.description}</p>
+>>>>>>> ba0ba84984443a3ad6f35fff3d1e2e81deb6e5a4
 
   function verDetalhes(id: number) {
     router.push(`/produto/${id}`);
